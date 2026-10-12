@@ -1,0 +1,437 @@
+
+/* EMMA-CO BEST ALUMINUM LTD */
+
+:root {
+  --green: #102b25;
+  --gold: #d8aa54;
+  --light: #f7f6f1;
+  --text: #202a25;
+  --muted: #68736d;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 85px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: var(--text);
+  line-height: 1.7;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button, input, select, textarea {
+  font: inherit;
+}
+
+.header {
+  background: white;
+  min-height: 80px;
+  padding: 15px 6%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 12px #0000000c;
+}
+
+.logo {
+  color: var(--green);
+  font-weight: 900;
+  font-size: 19px;
+  line-height: 1.3;
+}
+
+.logo span {
+  display: block;
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: #8c692b;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+nav a {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+nav a:hover {
+  color: #a77b31;
+}
+
+.menu-toggle {
+  display: none;
+  border: 0;
+  background: transparent;
+  color: var(--green);
+  font-size: 27px;
+  cursor: pointer;
+}
+
+.hero {
+  min-height: 580px;
+  display: flex;
+  align-items: center;
+  padding: 80px 7%;
+  color: white;
+  background:
+    linear-gradient(90deg, #081c17f2, #102b25b8),
+    url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1800&q=85")
+    center/cover no-repeat;
+}
+
+.hero-content {
+  max-width: 720px;
+}
+
+.eyebrow {
+  color: #b58636;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 18px;
+}
+
+.hero .eyebrow {
+  color: var(--gold);
+}
+
+h1, h2, h3 {
+  line-height: 1.2;
+  margin-bottom: 18px;
+}
+
+h1 {
+  font-size: clamp(40px, 6vw, 70px);
+  letter-spacing: -2px;
+}
+
+h1 span, .promise h2 span {
+  color: var(--gold);
+}
+
+.hero-content > p:not(.eyebrow) {
+  color: #e0e7e2;
+  max-width: 570px;
+  margin-bottom: 28px;
+}
+
+.button {
+  display: inline-block;
+  padding: 13px 22px;
+  background: var(--gold);
+  border: 1px solid var(--gold);
+  color: #15251d;
+  font-weight: 800;
+  font-size: 13px;
+  cursor: pointer;
+  transition: .2s;
+  margin: 4px 8px 4px 0;
+}
+
+.button:hover {
+  background: #f0d49c;
+  transform: translateY(-2px);
+}
+
+.button-outline {
+  background: transparent;
+  border-color: white;
+  color: white;
+}
+
+.button-outline:hover {
+  color: var(--green);
+}
+
+.section {
+  padding: 85px 7%;
+}
+
+.intro {
+  background: var(--light);
+  text-align: center;
+}
+
+.intro > p:not(.eyebrow) {
+  max-width: 800px;
+  margin: 15px auto;
+  color: var(--muted);
+}
+
+h2 {
+  font-size: clamp(30px, 4vw, 44px);
+  color: var(--green);
+  letter-spacing: -1px;
+}
+
+.section-intro {
+  color: var(--muted);
+  margin-bottom: 30px;
+}
+
+.products {
+  text-align: center;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 25px;
+  margin-top: 35px;
+  text-align: left;
+}
+
+.product-card {
+  border: 1px solid #e4e6df;
+  background: white;
+  transition: .25s;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px #102b2514;
+}
+
+.product-card img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  display: block;
+  background: #e7e9e3;
+}
+
+.product-info {
+  padding: 25px;
+}
+
+.product-info h3 {
+  color: var(--green);
+  font-size: 21px;
+}
+
+.product-info p {
+  color: var(--muted);
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.order-button {
+  border: 0;
+  border-top: 1px solid #e4e6df;
+  background: transparent;
+  width: 100%;
+  padding-top: 16px;
+  color: #8a6526;
+  font-weight: 800;
+  text-align: left;
+  cursor: pointer;
+}
+
+.order-button:hover {
+  color: var(--green);
+}
+
+.promise {
+  background: var(--green);
+  color: white;
+  text-align: center;
+}
+
+.promise h2 {
+  color: white;
+}
+
+.promise > p:not(.eyebrow) {
+  max-width: 650px;
+  margin: 0 auto 22px;
+  color: #d1dbd4;
+}
+
+.contact {
+  background: var(--light);
+}
+
+.contact > p:not(.eyebrow) {
+  color: var(--muted);
+  max-width: 750px;
+}
+
+.contact-details {
+  background: white;
+  border-left: 4px solid var(--gold);
+  padding: 22px;
+  margin: 25px 0;
+  max-width: 850px;
+}
+
+.contact-details p {
+  margin: 8px 0;
+  overflow-wrap: anywhere;
+}
+
+.contact-details a {
+  color: #896326;
+  font-weight: 700;
+}
+
+.contact-form {
+  background: white;
+  border: 1px solid #e3e5dd;
+  padding: 28px;
+  max-width: 650px;
+  margin-top: 25px;
+}
+
+.contact-form label {
+  display: block;
+  margin: 15px 0 6px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #d8ddd5;
+  background: white;
+  color: var(--text);
+  outline: none;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+  border-color: var(--gold);
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.contact-form .button {
+  margin-top: 20px;
+}
+
+footer {
+  background: #081c17;
+  color: #cbd5ce;
+  text-align: center;
+  padding: 35px 20px;
+  font-size: 12px;
+}
+
+.footer-logo {
+  font-size: 19px;
+  color: white;
+  font-weight: 900;
+}
+
+footer p {
+  margin-bottom: 8px;
+}
+
+.whatsapp-float {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 90;
+  background: #20c568;
+  color: white;
+  font-size: 12px;
+  font-weight: 800;
+  padding: 14px 17px;
+  border-radius: 30px;
+  box-shadow: 0 5px 20px #0003;
+}
+
+.whatsapp-float:hover {
+  background: #139b4c;
+}
+
+@media (max-width: 760px) {
+  .header {
+    min-height: 72px;
+    padding: 12px 5%;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  nav {
+    display: none;
+    position: absolute;
+    top: 72px;
+    left: 0;
+    right: 0;
+    background: white;
+    padding: 15px 6% 22px;
+    box-shadow: 0 10px 20px #0001;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+  }
+
+  nav.open {
+    display: flex;
+  }
+
+  nav a {
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+  }
+
+  .hero {
+    min-height: 550px;
+    padding: 65px 6%;
+    background-position: center;
+  }
+
+  h1 {
+    font-size: clamp(39px, 11vw, 58px);
+  }
+
+  .section {
+    padding: 65px 6%;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .product-card img {
+    height: 240px;
+  }
+
+  .contact-form {
+    padding: 20px;
+  }
+
+  .whatsapp-float {
+    right: 12px;
+    bottom: 12px;
+  }
+}
